@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DiffGenerationConfig">
+    <option name="updateChangeLogPath" value="WalletAPI/src/main/resources/db/changelog/changelog.xml" />
+    <option name="updateDbConnectionName" value="4e98e039-8dbc-4961-bd3a-7fe5aaea82ac" />
+  </component>
+</project>

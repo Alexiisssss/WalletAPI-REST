@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/walletdb
+    username: postgres
+    password: password
+    hikari:
+      maximum-pool-size: 20
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+  liquibase:
+    change-log: classpath:db/changelog/changelog.xml
+
+  server:
+    port: 8080
+    servlet:
+      context-path: /api/v1
+
+    cache:
+      type: ehcache
